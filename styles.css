@@ -1,0 +1,102 @@
+/* Carbon / Motor Parts Inspired Color Scheme */
+:root {
+    --primary-bg: #1c1c1c; /* Dark carbon-like background */
+    --secondary-bg: #2b2b2b; /* Slightly lighter dark shade */
+    --text-color: #ffffff; /* White text for contrast */
+    --product-bg: #333333; /* Product card background */
+    --cart-bg: #2e2e2e; /* Cart background */
+    --button-bg: #ff4500; /* Orange button for a pop of color (like motor aesthetics) */
+    --button-hover-bg: #ff6347; /* Lighter orange on hover */
+    --shadow-color: rgba(0, 0, 0, 0.6); /* Shadow for depth */
+  }
+  
+  /* General Styles for the whole body */
+  body {
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    margin: 20px;
+    background-color: var(--primary-bg); /* Background color from root */
+    color: var(--text-color); /* Text color from root */
+  }
+  
+  /* Headings (h1 and h2) styling */
+  h1, h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Product List Container */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between product cards */
+    margin-bottom: 20px;
+    justify-content: center; /* Center products horizontally */
+  }
+  
+  /* Individual Product Card */
+  .product {
+    border: 1px solid #444; /* Subtle border to match the theme */
+    border-radius: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: var(--product-bg); /* Product background color */
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-color);
+  }
+  
+  /* Product Image Styling */
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+  }
+  
+  /* Cart Container */
+  .cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--cart-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    padding: 20px;
+  }
+  
+  /* Individual Cart Item */
+  .cart p {
+    margin: 5px 0;
+  }
+  
+  /* Total Price Display */
+  .total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-top: 10px;
+  }
+  
